@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindowClass</class>
+ <widget class="QMainWindow" name="MainWindowClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>600</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="actionSet_Points"/>
+   </widget>
+   <widget class="QMenu" name="menuOpen">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <widget class="QMenu" name="menuOpen_3">
+     <property name="title">
+      <string>Open Leaf</string>
+     </property>
+     <addaction name="actionSample_3"/>
+     <addaction name="actionSample_4"/>
+    </widget>
+    <widget class="QMenu" name="menuOpen_Surface">
+     <property name="title">
+      <string>Open Surface</string>
+     </property>
+     <addaction name="actionSurface_1"/>
+     <addaction name="actionSurface_2"/>
+    </widget>
+    <addaction name="menuOpen_3"/>
+    <addaction name="menuOpen_Surface"/>
+    <addaction name="actionMerge"/>
+   </widget>
+   <addaction name="menuOpen"/>
+   <addaction name="menuEdit"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionSet_Points"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionSet_Points">
+   <property name="text">
+    <string>Set Points</string>
+   </property>
+  </action>
+  <action name="actionWireframe_On">
+   <property name="text">
+    <string>Wireframe On</string>
+   </property>
+  </action>
+  <action name="actionWireframe_Off">
+   <property name="text">
+    <string>Wireframe Off</string>
+   </property>
+  </action>
+  <action name="actionSample_2">
+   <property name="text">
+    <string>Sample 2</string>
+   </property>
+  </action>
+  <action name="actionSample_Surface_1">
+   <property name="text">
+    <string>Sample Surface 1</string>
+   </property>
+  </action>
+  <action name="actionSample_1">
+   <property name="text">
+    <string>sample 1</string>
+   </property>
+  </action>
+  <action name="actionSample_3">
+   <property name="text">
+    <string>Sample 1</string>
+   </property>
+  </action>
+  <action name="actionSample_4">
+   <property name="text">
+    <string>Sample 2</string>
+   </property>
+  </action>
+  <action name="actionSurface_1">
+   <property name="text">
+    <string>Surface 1</string>
+   </property>
+  </action>
+  <action name="actionSurface_2">
+   <property name="text">
+    <string>Surface 2</string>
+   </property>
+  </action>
+  <action name="actionMerge">
+   <property name="text">
+    <string>Merge</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="mainwindow.qrc"/>
+ </resources>
+ <connections/>
+</ui>
